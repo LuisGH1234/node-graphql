@@ -1,0 +1,23 @@
+type Query {
+    hello(name: String!): String
+    user(id: ID!): User
+}
+type User {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    phone: String
+    email: String!
+    address: String!
+    # password: String!
+    obesidad: Boolean
+    hipertension: Boolean
+    sedentario: Boolean
+    SPC: Boolean
+    data: [Data]
+}
+type Data {
+    value: Float
+    dateTime: String
+    type: Int!
+}
